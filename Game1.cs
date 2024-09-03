@@ -10,7 +10,7 @@ namespace GamePro_01
         private SpriteBatch _spriteBatch;
 
         public int updatefeature1;
-
+        public Vector2 playerJump = new Vector2(2,0);
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -38,7 +38,11 @@ namespace GamePro_01
                 Exit();
 
             // TODO: Add your update logic here
+            if (Keyboard.GetState().IsKeyDown(Keys.W))
+            {
+                playerJump.Y += 2;
 
+            }
             base.Update(gameTime);
         }
 
