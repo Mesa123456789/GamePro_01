@@ -44,7 +44,7 @@ namespace GamePro_01
 
         public void UpdateGit()
         {
-
+            int num = 0;
         }
 
         protected override void Draw(GameTime gameTime)
